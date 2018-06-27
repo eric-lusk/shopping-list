@@ -1,12 +1,12 @@
 CC=gcc
-CFLAGS=-ggdb -lm
+CFLAGS=-ggdb -lm -Wall
 FILES = main.c ItemToPurchase.c
-OUT=main.o
+OUT=a.out
 
 build: $(FILES)
 	$(CC) $(CFLAGS) -o $(OUT) $(FILES)
 
 clean:
-	-rm -f *.o main
+	-rm -f *.out
 
 rebuild: clean build
