@@ -36,7 +36,7 @@ int main() {
   PrintItemCost(&secondItem);
   printf("\n");
   printf("Total: $%d\n",(firstItem.itemPrice * firstItem.itemQuantity)+
-                        (secondItem.itemPrice * secondItem.itemQuantity));
+    (secondItem.itemPrice * secondItem.itemQuantity));
 
 
   return (0);
