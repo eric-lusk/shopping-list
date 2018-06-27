@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=--ggdb -lm
+CFLAGS=-ggdb -lm
 FILES = main.c ItemToPurchase.c
 OUT=main.o
 

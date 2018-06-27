@@ -4,15 +4,13 @@
 #include <string.h>
 
 int main() {
-  char item1[50];
-  char item2[50];
   ItemToPurchase firstItem;
   ItemToPurchase secondItem;
 
 
   printf("Item 1\n");
   printf("Enter the item name:\n");
-  gets(&(firstItem.itemName));
+  fgets((firstItem.itemName), 50, stdin);
 
   printf("Enter the item price:\n");
   scanf("%d", &(firstItem.itemPrice));
@@ -20,12 +18,15 @@ int main() {
   printf("Enter the item quantity:\n");
   scanf("%d", &(firstItem.itemQuantity));
   printf("\n");
+  getchar();  // using to clear buffer, otherwise will mess up following fgets
 
   printf("Item 2\n");
   printf("Enter the item name:\n");
-  gets(&(secondItem.itemName));
+  fgets((secondItem.itemName), 50, stdin);
+
   printf("Enter the item price:\n");
   scanf("%d", &(secondItem.itemPrice));
+
   printf("Enter the item quantity:\n");
   scanf("%d", &(secondItem.itemQuantity));
   printf("\n");
