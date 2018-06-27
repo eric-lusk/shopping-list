@@ -19,6 +19,7 @@ int main() {
   printf("Enter the item quantity:\n");
   scanf("%d", &(firstItem.itemQuantity));
   printf("\n");
+
   getchar();  // using to clear buffer, otherwise will mess up following fgets
 
   printf("Item 2\n");
@@ -41,6 +42,6 @@ int main() {
     (secondItem.itemPrice * secondItem.itemQuantity));
 
 
-  return (0);
+  return 0;
 
 }
