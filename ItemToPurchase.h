@@ -8,9 +8,6 @@
 * int itemPrice
 * int itemQuantity
 */
-#ifndef ITEMTOPURCHASE_H
-#define ITEMTOPURCHASE_H
-
 typedef struct ItemToPurchase{
    char itemName[50];
    int itemPrice;
@@ -20,4 +17,3 @@ typedef struct ItemToPurchase{
 void MakeItemBlank(ItemToPurchase*);
 void PrintItemCost(ItemToPurchase*);
 
-#endif
