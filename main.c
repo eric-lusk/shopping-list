@@ -11,6 +11,7 @@ int main() {
   printf("Item 1\n");
   printf("Enter the item name:\n");
   fgets((firstItem.itemName), 50, stdin);
+  firstItem.itemName[strcspn(firstItem.itemName, "\n\r")] = 0;
 
   printf("Enter the item price:\n");
   scanf("%d", &(firstItem.itemPrice));
@@ -23,6 +24,7 @@ int main() {
   printf("Item 2\n");
   printf("Enter the item name:\n");
   fgets((secondItem.itemName), 50, stdin);
+  secondItem.itemName[strcspn(secondItem.itemName, "\n\r")] = 0;
 
   printf("Enter the item price:\n");
   scanf("%d", &(secondItem.itemPrice));
@@ -31,7 +33,7 @@ int main() {
   scanf("%d", &(secondItem.itemQuantity));
   printf("\n");
 
-  printf("TOTAL COST\n");
+  printf("Total cost:\n");
   PrintItemCost(&firstItem);
   PrintItemCost(&secondItem);
   printf("\n");
