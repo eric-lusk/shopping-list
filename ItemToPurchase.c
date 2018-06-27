@@ -1,4 +1,13 @@
-// ItemToPurchase.c - Related function definitions
+/*
+* ItemToPurchase.c - Related function definitions
+*
+* Related functions
+* MakeItemBlank() (2 pts)
+* Has a pointer to an ItemToPurchase parameter.
+* Sets item's name = "none", item's price = 0, item's quantity = 0
+* PrintItemCost()
+* Has an ItemToPurchase parameter.
+*/
 #include "ItemToPurchase.h"
 #include <stdio.h>
 #include <string.h>
