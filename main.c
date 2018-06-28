@@ -34,7 +34,7 @@ int main() {
   scanf("%d", &(secondItem.itemQuantity));
   printf("\n");
 
-  printf("Total cost:\n");
+  printf("TOTAL COST\n");
   PrintItemCost(&firstItem);
   PrintItemCost(&secondItem);
   printf("\n");
