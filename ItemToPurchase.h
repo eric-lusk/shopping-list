@@ -16,4 +16,3 @@ typedef struct ItemToPurchase{
 
 void MakeItemBlank(ItemToPurchase*);
 void PrintItemCost(ItemToPurchase*);
-
